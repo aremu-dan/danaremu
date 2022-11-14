@@ -43,7 +43,7 @@ const LandingItem = ({data}) => {
    return (
       <Link to={`.${data.link}`} className='item' style={itemstyle}>
          <div className='content'>
-            <img src={`./media${data.link}.svg`} className='icon' />
+            <img src={`./media${data.link}.svg`} alt={data.title} className='icon' />
             <p>{data.title}</p>
          </div>
       </Link>
