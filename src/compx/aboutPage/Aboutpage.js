@@ -18,7 +18,7 @@ function Aboutpage() {
       'style': 'url(/media/icons/email.svg)'
     },
     {
-      'key': 'linkedin.com/in/dan-taiye-aremu/',
+      'key': 'linkedin.com/in/dan-taiye-aremu',
       'linkTo': '',
       'style': 'url(/media/icons/facebook.svg)'
     },
@@ -105,7 +105,7 @@ function Aboutpage() {
       description: [
         'Optimized and maintained web-based management system UI, making adjustments and updates to features to improve usability',
         'Improved database relationship and normalization to reduce redundancy and improve search response time by 20%',
-        'Made researches and attended meetings with clients and potential clients, using the research data help the organization understand clients\’ needs and provide appropriate response'
+        'Made researches and attended meetings with clients and potential clients, using the research data help the organization understand clients needs and provide appropriate response'
       ]
     },
     {
