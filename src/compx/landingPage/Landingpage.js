@@ -6,7 +6,7 @@ import './Landingpage.css';
 
 
 function Landingpage() {
-   const [landingMenu, setLandingMenu] = useState([
+   const [landingMenu] = useState([
       {
          'icon': '',
          'title': 'home',
@@ -39,9 +39,6 @@ const LandingItem = ({data}) => {
    const itemstyle = {
       backgroundImage: `url(/media${data.link}.jpg)`
    };
-   const iconstyle = {
-      backgroundImage: `url(/media${data.link}_icon.png)`
-   }
 
    return (
       <Link to={`.${data.link}`} className='item' style={itemstyle}>
