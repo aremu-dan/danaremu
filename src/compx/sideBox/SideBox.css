@@ -1,0 +1,166 @@
+.sidebox {
+   position: fixed;
+   height: 100vh;
+   width: fit-content;
+   padding: 0;
+   margin: 0;
+   left: 0px;
+   padding-left: clamp(5px, 3vmin, 25px);
+   z-index: 20;
+
+   /* background-image: url('./../../..//public/media/home.jpg'); */
+   background-position: center;
+   background-size: cover;
+}
+.sidebox.close {
+   left: -100px;
+}
+.sidebox::before {
+   content: ' ';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   /* background: linear-gradient(transparent -5%, rgba(0, 0, 0, .8), transparent 105%); */
+   left: 0;
+   bottom: 0;
+   left: clamp(0, 5vmin, 100px);
+}
+
+/*  */
+.sidebox .toggle {
+   position: fixed;
+   z-index: 100;
+   width: 35px;
+   height: fit-content;
+   left: 20px;
+   top: 20px;
+   cursor: pointer;
+   
+   min-height: 35px;
+   gap: 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   border-radius: 50%;
+   border: 2px solid white;
+}
+.sidebox .toggle:hover {
+   display: block;
+   padding-top: 11px;
+   border-radius: 0%;
+   border: 0px solid transparent;
+}
+/* CLOSED */
+.sidebox.close .toggle {
+   justify-content: space-evenly;
+   flex-direction: column;
+
+   border-radius: 0%;
+   border: 0px solid white;
+   border-top-width: 3px;
+   border-bottom-width: 3px;
+}
+.sidebox.close .toggle:hover {
+   padding-top: 11px;
+   border: 0px solid transparent;
+}
+
+
+.sidebox .toggle div {
+   background: white;
+   position: absolute;
+   width: 60%;
+   height: 3px;
+   transform: rotate(-45deg);
+}
+.sidebox .toggle div:last-child {
+   transform: rotate(45deg);
+}
+.sidebox .toggle:hover div {
+   position: relative;
+   width: 60%;
+   margin: auto;
+   margin-top: -6%;
+   margin-bottom: 25%;
+}
+.sidebox .toggle:hover div:last-child {
+   margin-top: 0%;
+   margin-bottom: 0px;
+}
+/* CLOSED */
+.sidebox.close .toggle div {
+   background: white;
+   position: relative;
+   width: 60%;
+   height: 3px;
+   transform: rotate(0deg);
+}
+.sidebox.close > .toggle:hover > div {
+   left:unset !important;
+   right: 0 !important;
+   transform: rotate(45deg);
+}
+.sidebox.close .toggle:hover div:last-child {
+   transform: rotate(-45deg);
+}
+
+
+/* .sidebox .toggle,
+.sidebox.close .toggle {
+   position: fixed;
+   z-index: 10;
+   width: 35px;
+   left: 20px;
+   top: 20px;
+   cursor: pointer;
+}
+
+.sidebox.close .toggle {
+   height: 20px;
+
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   gap: 6px;
+}
+.sidebox .toggle div,
+.sidebox.close .toggle div {
+   position: relative;
+   width: 100%;
+   height: 2px;
+   background: white;
+}
+
+
+.sidebox .toggle.close,
+.sidebox.close .toggle:hover {
+   height: 35px;
+   gap: 0px;
+   align-items: center;
+   justify-content: center;
+   
+   border-radius: 50%;
+   border: 2px solid white;
+}
+.sidebox .toggle.close div,
+.sidebox.close .toggle:hover div {
+   position: absolute;
+   width: 60%;
+   height: 3px;
+}
+.sidebox .toggle.close div:first-child,
+.sidebox.close .toggle:hover div:first-child {
+   transform: rotate(45deg);
+}
+.sidebox .toggle.close div:last-child,
+.sidebox.close .toggle:hover div:last-child {
+   transform: rotate(-45deg);
+}
+.sidebox .toggle.close div:nth-child(2),
+.sidebox.close .toggle:hover div:nth-child(2) {
+   width: 0;
+   left: 20%;
+} */
+
+/* .sidebox.close .toggle {} */

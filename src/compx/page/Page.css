@@ -1,0 +1,17 @@
+.page {
+   position: relative;
+   height: fit-content;
+   min-height: 100vh;
+   width: 100%;
+   /* display: flex;
+   flex-wrap: nowrap;
+   align-items: stretch; */
+}
+/* COLOR: 00283A */
+
+.pageContainer {
+   position: relative;
+   height: fit-content;
+   min-height: 60vh;
+   width: 100%;
+}

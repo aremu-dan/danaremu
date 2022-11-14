@@ -1,0 +1,747 @@
+.about-me {
+   position: relative;
+   height: calc(100vh - 64px);
+   overflow: hidden;
+   width: 100%;
+   background:rgba(0, 40, 58, 1);
+   color: white;
+   padding: 0;
+   margin: auto;
+
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: stretch;
+}
+
+.about-me-profile {
+   position: relative;
+   height: 100vh;
+   height: calc(100vh - 100px);
+   height: 100%;
+   width: 500px;
+   background:#084C41;
+   color: white;
+   overflow-y: auto;
+}
+.about-me-profile .dp {
+   position: relative;
+   margin: auto;
+   margin-top: 30px;
+   margin-bottom: 10px;
+   padding: 0;
+   height: auto;
+   aspect-ratio: 1;
+   width: min(220px, calc(100% - 20px));
+   border-radius: 50%;
+   background: linear-gradient(145deg, #07443b, #095146);
+   box-shadow:  31px 31px 62px #063e35,
+             -31px -31px 62px #0a5a4d;
+   overflow: hidden;
+}
+.about-me-profile .dp::before {
+   content: ' ';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-image: url('./../../..//public/media/user/user_temp.png');
+   background-position: center;
+   background-size: cover;
+}
+.about-me-profile .details {
+   position: relative;
+   margin: auto;
+   margin-bottom: 30px;
+   padding: 0;
+   height: fit-content;
+   width: calc(100% - 20px);
+   text-align: center;
+}
+.about-me-profile .details p {
+   margin: 0;
+   margin-bottom: 5px;
+   padding: 0;
+   height: fit-content;
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 1.8rem;
+}
+.about-me-profile .details p ~ div {
+   height: fit-content;
+   text-transform: uppercase;
+   font-size: 14px;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   width: 100%;
+   margin: auto;
+   margin-bottom: 10px;
+}
+.about-me-profile .details p ~ div span {
+   display: flex;
+   flex-wrap: nowrap;
+   width: max-content;
+   padding: 0 15px;
+   word-wrap: unset;
+   word-break: keep-all;
+   color: #bbb;
+}
+.about-me-profile .details p ~ div::before,
+.about-me-profile .details p ~ div::after {
+   content: ' ';
+   position: relative;
+   margin: 0;
+   height: 1px;
+   width: 30%;
+   background: white;
+}
+.about-me-profile > section {
+   position: relative;
+   padding: 0;
+   padding-top: 20px;
+   margin: 0 auto;
+   width: 100%;
+   height: fit-content;
+   text-align: left;
+}
+.about-me-profile > section:first-child {
+   padding: 0;
+}
+.about-me .about-me-profile .section-head {
+   position: relative;
+   height: fit-content;
+   width: fit-content;
+   padding: 0;
+   padding-left: 20px;
+   font-size: 24px;
+   font-size: 1.5rem;
+   text-transform: capitalize;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+.about-me .about-me-profile .section-head::after {
+   content: ' ';
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   left: 0px;
+   bottom: 0;
+   background: linear-gradient(90deg, #084C41, grey, white);
+}
+.about-me .about-me-profile .section-body {
+   position: relative;
+   min-height: 50px;
+   height: fit-content;
+   width: 100%;
+   font-size: 15px;
+   padding: 0 20px;
+   margin: 0;
+}
+
+
+.about-personals {
+   position: relative;
+   height: fit-content;
+   width: 100%;
+}
+.about-personal {
+   position: relative;
+   height: fit-content;
+   min-height: 10px;
+   width: 100%;
+   gap: 5px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.about-personal .item {
+   position: relative;
+   height: fit-content;
+   width: 100%;
+   font-size: 14px;
+   padding: 0;
+   display: flex;
+   align-items: center;
+}
+.about-personal .item > div {
+   position: relative;
+   height: 25px;
+   aspect-ratio: 1;
+   margin-right: 10px;
+   background-position: center;
+   background-size: cover;
+   float: left;
+}
+
+
+.about-hobbies {
+   position: relative;
+   height: fit-content;
+   width: 100%;
+}
+.about-hobby {
+   position: relative;
+   height: fit-content;
+   min-height: 10px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5px 25px;
+}
+.about-hobby .item {
+   position: relative;
+   height: fit-content;
+   width: fit-content;
+   font-size: 16px;
+   padding: 0;
+}
+
+
+.about-me-content {
+   position: relative;
+   min-height: 200px;
+   height: calc(100vh - 100px);
+   background: red;
+   height: 100%;
+   width: 100%;
+   background: white;
+   padding: 40px 30px 0px 30px;
+   color: black;
+   text-align: left;
+   overflow-y: auto;
+}
+.about-me-content > section {
+   padding: 0;
+   margin: auto;
+   width: 100%;
+   height: fit-content;
+}
+.about-me .about-me-content .section-head {
+   position: relative;
+   height: fit-content;
+   width: fit-content;
+   padding-left: 20px;
+   font-size: 24px;
+   font-size: 2rem;
+   text-transform: capitalize;
+   font-weight: bold;
+   margin-bottom: 20px;
+}
+.about-me .about-me-content .section-head::after {
+   content: ' ';
+   position: absolute;
+   height: 2px;
+   width: 100%;
+   left: 20px;
+   bottom: 0;
+   background: linear-gradient(90deg, #084C41, grey, white);
+}
+.about-me .about-me-content .section-body {
+   position: relative;
+   height: fit-content;
+   width: 100%;
+   font-size: 15px;
+   margin-bottom: 20px;
+}
+.about-me .about-me-content .profile.section-body {
+   width: min(900px, 100%);
+}
+.about-me .about-me-content .experiences.section-body {
+   padding-left: 0;
+   padding-right: 0;
+   margin-left: -30px;
+   width: calc(100% + 60px);
+   z-index: 1;
+}
+.about-me .about-me-content .education.section-body {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.about-skills {
+   position: relative;
+   height: fit-content;
+   width: 100%;
+   color: white;
+   border-bottom: 1px solid white;
+
+   display: grid;
+   gap: 1px;
+   grid-template-columns: auto clamp(100px, 15vmin, 130px);
+   grid-template-columns: auto 40px;
+   grid-template-columns: 100%;
+}
+.about-skill {
+   position: relative;
+   height: fit-content;
+   width: 100%;
+   background: white;
+   border-right: 1px solid white;
+   color: white;
+   display: flex;
+   flex-wrap: wrap;
+}
+.about-skill .item {
+   position: relative;
+   height: fit-content;
+   height: fit-content;
+   width: 100%;
+   width: fit-content;
+   width: max(180px,25%);
+   width: clamp(180px, 100%, 25%);
+   color: black;
+   padding: 20px 10px 0 0;
+}
+.about-skill .item span {
+   position: relative;
+   text-align: left;
+   text-transform: uppercase;
+   font-weight: 400;
+   color: white;
+   padding: 5px 0;
+   margin: auto;
+   color: black;
+   font-weight: bold;
+}
+.about-skill .item > div {
+   position: relative;
+   height: 4px;
+   width: 100%;
+   padding: 0;
+   margin-top: 5px;
+   background: linear-gradient(
+      90deg, 
+      #bbb, #bbb);
+   border-color: grey;
+   border-style: solid;
+   border-width: 0px 0px 0px 1px;
+}
+.about-skill .item > div::before {
+   content: ' ';
+   position: absolute;
+   height: 4px;
+   width: 40%;
+   background: linear-gradient(
+      90deg, 
+      white, grey, 
+      #084C41, #084C41, #084C41);
+}
+.about-skill .item:hover {
+   z-index: initial;
+}
+
+
+.about-experiences {
+   position: relative;
+   height: fit-content;
+   min-height: 30vmin;
+   width: 100%;
+   display: grid;
+   gap: 1px;
+   grid-template-columns: auto clamp(100px, 15vmin, 130px);
+   grid-template-columns: 40px auto;
+   grid-template-columns: 100%;
+}
+.about-experience {
+   position: relative;
+   height: fit-content;
+   min-height: 300px;
+   width: 100%;
+   background: white;
+   background: #00283a;
+   color: white;
+   padding: 20px 10px;
+
+   background-color: grey;
+   background-image: url('./../../..//public/media/about.jpg');
+   background-position: left center;
+   background-size: cover;
+}
+.about-experience::before {
+   content: ' ';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   right: 0;
+   background: rgba(0, 40, 58, .7);
+   background: rgba(0, 0, 0, .8);
+   background: linear-gradient(165deg, rgba(0, 40, 58, .7), rgba(0, 0, 0, .9));
+}
+.about-experience::after {
+   content: '';
+   position: absolute;
+   width: 2px;
+   background-color: white;
+   top: 0;
+   bottom: 0;
+   left: 50%;
+}
+.about-experience .item {
+   padding: 10px 40px;
+   position: relative;
+   background-color: transparent;
+   width: 50%;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: flex-start;
+   left: 0;
+}
+.about-experience .item.right {
+   left: 50%;
+}
+.about-experience .left::before,
+.about-experience .right::before {
+   content: " ";
+   height: 0;
+   position: absolute;
+   top: 22px;
+   width: 0;
+   z-index: 1;
+   right: 30px;
+   border: medium solid white;
+   border-width: 10px 0 10px 10px;
+   border-color: transparent transparent transparent white;
+}
+.about-experience .right::before {
+   right: unset;
+   left: 30px;
+   border-width: 10px 10px 10px 0;
+   border-color: transparent white transparent transparent;
+}
+.about-experience .content {
+   width: 100%;
+   padding: 20px;
+   background-color: white;
+   position: relative;
+   border-radius: 10px;
+   color: grey;
+   transition-duration: .2s;
+   text-align: left;
+}
+.about-experience .content:hover {
+   color: black;
+}
+.about-experience .content h3,
+.about-experience .content p {
+   padding: 0;
+   margin: 0;
+   text-transform: capitalize;
+}
+.about-experience .content p {
+   padding-bottom: 10px;
+}
+.about-experience .item > .content > span {
+   display: block;
+   position: relative;
+   padding: 0;
+   margin: 0;
+}
+.about-experience .content h3 {
+   color: black;
+}
+.about-experience .content:hover h3 > span {
+   color: #084C41;
+}
+.about-experience .item > .content > span::before {
+   content: '- ';
+}
+.about-experience .item > .content ~ div {
+   position: absolute;
+   width: 22px;
+   height: 22px;
+   right: -12px;
+   top: 20px;
+   background-color: white;
+   border: 1px solid white;
+   border-radius: 50%;
+   z-index: 1;
+}
+.about-experience .item.right > .content ~ div {
+   left: -11px;
+   right: unset;
+}
+.about-experience .item > .content ~ div::after {
+   content: attr(work-duration);
+   position: absolute;
+   width: fit-content;
+   height: fit-content;
+   min-height: 10px;
+   padding-left: 20px;
+   color: white;
+   text-transform: uppercase;
+   left: 20px;
+}
+.about-experience .item.right > .content ~ div::after {
+   padding-left: 0px;
+   padding-right: 20px;
+   left: unset;
+   right: 20px;
+}
+.about-experience .item:hover .content {
+   transition-duration: 1s;
+   transform: scale(1.04);
+   user-select: none;
+   cursor: pointer;
+}
+
+
+.about-educations {
+   position: relative;
+   height: fit-content;
+   width: 100%;
+   color: white;
+   border-bottom: 1px solid white;
+   display: grid;
+   gap: 1px;
+   grid-template-columns: auto clamp(100px, 15vmin, 130px);
+   grid-template-columns: auto 40px;
+   grid-template-columns: 100%;
+}
+.about-education {
+   position: relative;
+   height: fit-content;
+   width: 100%;
+   border-right: 1px solid white;
+   color: white;
+   gap: 20px;
+   display: grid;
+   grid-template-rows: auto;
+}
+.about-education .item {
+   position: relative;
+   height: fit-content;
+   width: clamp(50%, 100%, 1000px);
+   width: fit-content;
+   color: black;
+   gap: 5px;
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   padding: 5px 5px 5px 5px;
+   background-clip: content-box;
+}
+.about-education .item:hover {
+   background: linear-gradient(90deg, #084C41, white);
+   padding-right: 150px;
+   transform: scale(1.04);
+}
+.about-education .item,
+.about-education .item * {
+   user-select: none;
+   cursor: pointer;
+}
+.about-education .item > div {
+   width: 100%;
+}
+.about-education .item > div:first-child {
+   position: relative;
+   height: fit-content;
+   width: fit-content;
+   padding: 0;
+   writing-mode: vertical-rl;
+   font-size: 17px;
+   font-weight: bolder;
+   color: #084C41;
+}
+.about-education .item:hover > div:first-child,
+.about-education .item:hover > div:last-child > div > span {
+   color: white;
+}
+.about-education .item > div:last-child > p {
+   position: relative;
+   text-align: left;
+   text-transform: uppercase;
+   font-weight: 400;
+   font-size: 16px;
+   padding: 0;
+   margin: 0;
+   color: black;
+   font-weight: bold;
+}
+.about-education .item > div:last-child > div {
+   position: relative;
+   height: fit-content;
+   width: 100%;
+   padding: 0;
+   display: flex;
+   justify-content: space-between;
+}
+.about-education .item > div:last-child > div > span {
+   position: relative;
+   text-align: left;
+   text-transform: uppercase;
+   font-size: 12px;
+   color: white;
+   padding: 0;
+   margin: 0;
+   color: grey;
+}
+.about-education .item > div:last-child > div > span:last-child {
+   font-weight: bold;
+}
+
+ 
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+/* Large devices (desktops, less than 1020px) */
+@media (max-width: 1120.98px) {
+   .about-skill .item {
+      width: clamp(100px, 100%, 33%);
+   }
+}
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+   .about-skill .item {
+      width: clamp(100px, 100%, 33%);
+   }
+
+   .about-experience::after {
+      left: 80px;
+   }
+   .about-experience .item {
+      width: 100%;
+      padding: 10px 10px 10px 100px;
+   }
+   .about-experience .item.right {
+      left: 0%;
+   }
+   .about-experience .left::before,
+   .about-experience .right::before {
+      right: unset;
+      left: 90px;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+   }
+   .about-experience .item.left > .content ~ div,
+   .about-experience .item.right > .content ~ div {
+      left: 60px;
+      right: unset;
+   }
+   .about-experience .item > .content ~ div::after,
+   .about-experience .item.right > .content ~ div::after {
+      padding-left: 0px;
+      padding-right: 10px;
+      left: unset;
+      right: 20px;
+   }
+}
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+   .about-skill .item {
+      width: clamp(100px, 100%, 50%);
+   }
+
+   .about-experience::after {
+      left: 40px;
+   }
+   .about-experience .item {
+      padding: 10px 10px 10px 60px;
+   }
+   .about-experience .left::before,
+   .about-experience .right::before {
+      left: 50px;
+   }
+   .about-experience .item.left > .content ~ div,
+   .about-experience .item.right > .content ~ div {
+      left: 20px;
+   }
+   .about-experience .item > .content ~ div::after,
+   .about-experience .item.right > .content ~ div::after {
+      padding-right: 0px;
+      right: 20px;
+      writing-mode: vertical-lr;
+   }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 580px) {
+   .about-me {
+      height: fit-content;
+      height: calc(100vh - 62px);
+      overflow: auto;
+      padding: 0;
+      margin: 0;
+      flex-wrap: wrap;
+      display: grid;
+      grid-template-rows: min-content auto;
+   }
+
+   .about-me-profile {
+      position: relative;
+      top: -1;
+      height: fit-content;
+      width: 100%;
+      margin: 0;
+      padding: 10px;
+      padding-top: 30px;
+      overflow-y: auto;
+      border-bottom: 2px solid white;
+      
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: 100%;
+   }
+   .about-me-profile > div:first-child {
+      max-width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      margin-bottom: 10px;
+      grid-column: span 2;
+      gap: 20px
+   }
+   .about-me-profile .dp {
+      order: 2;
+      width: 35%;
+   }
+   .about-me-profile .dp,
+   .about-me-profile .details,
+   .about-me-profile .details p,
+   .about-me-profile .details p ~ div,
+   .about-me-profile .details p ~ div span {
+      padding: 0;
+      margin: 0;
+   }
+   .about-me-profile .details {
+      width: 60%;
+      margin-bottom: 5%;
+      order: 1;
+   }
+   .about-me-profile .details p {
+      text-align: left;
+   }
+   .about-me-profile .details p ~ div span {
+      padding-left: 10px;
+   }
+   .about-me-profile .details p ~ div::before {
+      width: 25px;
+   }
+   .about-me-profile .details p ~ div::after,
+   .about-me-profile section:last-child,
+   .about-me-profile section .personal.section-head,
+   .about-personal .item > div {
+      display: none;
+   }
+   .about-me-profile .about-personal {
+      gap: 5px 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .about-personal .item {
+      width: fit-content;
+      font-size: 13px;
+   }
+
+   .about-me-content {
+      position: relative;
+      height: calc(100vh - 313px);
+      height: 100%;
+      overflow-y: auto;
+   }
+
+   .about-skill .item {
+      width: clamp(100px, 100%, 10%);
+   }
+}

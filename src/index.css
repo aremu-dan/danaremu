@@ -1,0 +1,64 @@
+:root {
+  --global-color-primary: #222222;
+  --global-color-secondary: #54595F;
+  --global-color-accent: #61CE70;
+  --global-color-text: #7A7A7A;
+  --global-color-lightblue: #6EC1E4;
+  --global-color-blue: #4054B2;
+  --global-color-navy: #053A63;
+  --global-color-shadow: #01111B;
+  --global-color-green: #23A455;
+  --global-color-dark: #000;
+  --global-color-light: #FFF;
+
+  --global-typography-primary-font-family: "Nunito Sans";
+  --global-typography-primary-font-weight: 800;
+  --global-typography-secondary-font-family: "Nunito Sans";
+  --global-typography-secondary-font-weight: 400;
+  --global-typography-text-font-family: "Nunito Sans";
+  --global-typography-text-font-weight: 400;
+  --global-typography-accent-font-family: "Nunito Sans";
+  --global-typography-accent-font-weight: 500;
+
+  --wp--preset--font-size--normal: 16px;
+  --wp--preset--font-size--huge: 42px;
+
+  --global-m-padding: clamp(10px, 10vmin, 150px);
+  --global-s-padding: clamp(2px, 5vmin, 50px);
+}
+
+*,
+*::after,
+*::before {
+  position: relative;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: "Nunito Sans Regular", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  background-repeat: no-repeat;
+  transition: all 1s;
+
+  outline-color:red;
+  outline-style: solid;
+  outline-width: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
